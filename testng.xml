@@ -6,6 +6,7 @@
       <class name="com.pom.testcase.LoginTest"/>
       <class name="com.pom.testcase.DashboardTest"/>
       <class name="com.pom.testcase.UserTest"/>
+      <class name="com.pom.testcase.AddUserTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

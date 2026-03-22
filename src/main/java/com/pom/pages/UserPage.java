@@ -1,7 +1,6 @@
 package com.pom.pages;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -25,6 +24,12 @@ public class UserPage {
 	
 	@FindBy(xpath = "//td[2]")
 	private List<WebElement> unamesColumn;
+	
+	@FindBy(xpath = "//td[3]")
+	private List<WebElement> emailColumn;
+	
+	@FindBy(xpath = "//button[text()='Add User']")
+	private WebElement clickAddUser;
 
 	
 	public UserPage(WebDriver driver) {
@@ -93,6 +98,21 @@ public class UserPage {
 		}	
 		return false;	
 	}
+	
+	
+	
+	// check email code e.g. gmail.com
+	public boolean verifyEmailCode() {
+	   for(WebElement element : emailColumn) {
+		   String text = element.getText();
+		   if(text.equals("gmail.com")) {
+			   return true;
+		   }else {
+			   return false;
+		   }
+	   }
+		return false;
+	}
 
 	
 	
@@ -104,7 +124,7 @@ public class UserPage {
 			String str = genders.get(i).getText();
 			String names = unamesColumn.get(i).getText();
 			System.out.println("Names is : "+names +" And Gender is: "+str);
-			boolean value = str.equals("Male") || str.equals("Female");
+//			boolean value = str.equals("Male") || str.equals("Female");
 			gender.add(str);
 		}
 		if(gender.equals("Male") || gender.equals("Female")) {
@@ -113,4 +133,9 @@ public class UserPage {
 		return false;
 	}
 	
+	
+	public AddUserPage clickAddUser()  {
+		clickAddUser.click();
+		return new AddUserPage(driver);
+	}
 }

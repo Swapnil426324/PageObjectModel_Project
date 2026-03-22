@@ -10,7 +10,7 @@ import com.pom.pages.DashboardPage;
 import com.pom.pages.LoginPage;
 import com.pom.pages.UserPage;
 
-public class LoginTest extends TestBase{
+public class LoginTest extends TestBase {
 
 	LoginPage lp = null;
 	public static DashboardPage dp = null;
@@ -32,15 +32,16 @@ public class LoginTest extends TestBase{
 		dp = lp.validLogin();
 		Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
 	}
-	
+
+
 	@Test(priority = 2, enabled = false)
 	public void verify_ClickUserBTN() {
 		up = dp.clickUsers();
 		Assert.assertEquals(driver.getTitle(), "JavaByKiran | User");
 	}
-	
+
 	@Test(priority = 3, enabled = false)
-	public void verify_printTable() {	
+	public void verify_printTable() {
 		Assert.assertTrue(up.verify_UserTable());
 	}
 

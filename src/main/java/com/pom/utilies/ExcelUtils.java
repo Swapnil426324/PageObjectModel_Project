@@ -88,6 +88,7 @@ public class ExcelUtils {
 					data[i-1][j] = row.getCell(j).toString();
 				}
 			}
+			wb.close();
 			return data;
 		}
 
