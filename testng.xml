@@ -8,5 +8,5 @@
       <class name="com.pom.testcase.UserTest"/>
       <class name="com.pom.testcase.AddUserTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

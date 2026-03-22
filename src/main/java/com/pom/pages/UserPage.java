@@ -105,7 +105,7 @@ public class UserPage {
 	public boolean verifyEmailCode() {
 	   for(WebElement element : emailColumn) {
 		   String text = element.getText();
-		   if(text.equals("gmail.com")) {
+		   if(text.contains("gmail.com")) {
 			   return true;
 		   }else {
 			   return false;
@@ -119,15 +119,16 @@ public class UserPage {
 	//print gender and Names
 	public boolean printGenderNameUserName() {
 		ArrayList<String> gender = new ArrayList<String>();
+		String str = null;
 		
 		for(int i=0;i<genders.size();i++) {
-			String str = genders.get(i).getText();
+			 str = genders.get(i).getText();
 			String names = unamesColumn.get(i).getText();
 			System.out.println("Names is : "+names +" And Gender is: "+str);
 //			boolean value = str.equals("Male") || str.equals("Female");
 			gender.add(str);
 		}
-		if(gender.equals("Male") || gender.equals("Female")) {
+		if(str.equals("Male") || str.equals("Female")) {
 			return true;
 		}
 		return false;

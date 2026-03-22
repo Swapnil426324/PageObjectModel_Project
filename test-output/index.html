@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TKA_Application" class="navigator-link">
-              <span class="suite-name border-failed">TKA Application</span>
+              <span class="suite-name border-passed">TKA Application</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TKA_Application" class="hide-methods failed suite-TKA_Application"> (hide)</a> <!-- hide-methods failed suite-TKA_Application -->
-                      <a href="#" panel-name="suite-TKA_Application" class="show-methods failed suite-TKA_Application"> (show)</a> <!-- show-methods failed suite-TKA_Application -->
-                    </span>
-                    <div class="method-list-content failed suite-TKA_Application">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.UserTest" class="method navigator-link" hash-for-method="verify_emailCode">verify_emailCode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.UserTest" class="method navigator-link" hash-for-method="verify_gender">verify_gender</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TKA_Application -->
+                    <span class="method-stats">10 methods,   10 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,6 +133,16 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.UserTest" class="method navigator-link" hash-for-method="verify_emailCode">verify_emailCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.UserTest" class="method navigator-link" hash-for-method="verify_gender">verify_gender</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.UserTest" class="method navigator-link" hash-for-method="verify_printTable">verify_printTable</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -172,38 +163,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TKA_Application" class="panel TKA_Application">
-          <div class="suite-TKA_Application-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.pom.testcase.UserTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_emailCode">
-                  </a> <!-- verify_emailCode -->
-                  <span class="method-name">verify_emailCode</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.pom.testcase.UserTest.verify_emailCode(UserTest.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verify_gender">
-                  </a> <!-- verify_gender -->
-                  <span class="method-name">verify_gender</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.pom.testcase.UserTest.verify_gender(UserTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TKA_Application-class-failed -->
           <div class="suite-TKA_Application-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -259,6 +218,20 @@
                   <a name="verify_clickAddUser">
                   </a> <!-- verify_clickAddUser -->
                   <span class="method-name">verify_clickAddUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_emailCode">
+                  </a> <!-- verify_emailCode -->
+                  <span class="method-name">verify_emailCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_gender">
+                  </a> <!-- verify_gender -->
+                  <span class="method-name">verify_gender</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -351,43 +324,43 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_AddUser')
 data.setCell(0, 2, 'com.pom.testcase.AddUserTest')
-data.setCell(0, 3, 9237);
+data.setCell(0, 3, 11079);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_Login')
-data.setCell(1, 2, 'com.pom.testcase.LoginTest')
-data.setCell(1, 3, 4248);
+data.setCell(1, 1, 'verify_printTable')
+data.setCell(1, 2, 'com.pom.testcase.UserTest')
+data.setCell(1, 3, 3423);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_printTable')
-data.setCell(2, 2, 'com.pom.testcase.UserTest')
-data.setCell(2, 3, 3236);
+data.setCell(2, 1, 'verify_CourseList')
+data.setCell(2, 2, 'com.pom.testcase.DashboardTest')
+data.setCell(2, 3, 2583);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_CourseList')
-data.setCell(3, 2, 'com.pom.testcase.DashboardTest')
-data.setCell(3, 3, 2497);
+data.setCell(3, 1, 'verify_Login')
+data.setCell(3, 2, 'com.pom.testcase.LoginTest')
+data.setCell(3, 3, 1211);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verify_verifyUnameAndGenderwithExcel')
+data.setCell(4, 1, 'verify_clickAddUser')
 data.setCell(4, 2, 'com.pom.testcase.UserTest')
-data.setCell(4, 3, 813);
+data.setCell(4, 3, 805);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verify_clickAddUser')
+data.setCell(5, 1, 'verify_verifyUnameAndGenderwithExcel')
 data.setCell(5, 2, 'com.pom.testcase.UserTest')
-data.setCell(5, 3, 490);
+data.setCell(5, 3, 651);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verify_ClickUserBTN')
 data.setCell(6, 2, 'com.pom.testcase.DashboardTest')
-data.setCell(6, 3, 472);
+data.setCell(6, 3, 492);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verify_gender')
 data.setCell(7, 2, 'com.pom.testcase.UserTest')
-data.setCell(7, 3, 441);
+data.setCell(7, 3, 462);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'verify_MainNavigation')
 data.setCell(8, 2, 'com.pom.testcase.DashboardTest')
-data.setCell(8, 3, 247);
+data.setCell(8, 3, 240);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'verify_emailCode')
 data.setCell(9, 2, 'com.pom.testcase.UserTest')
-data.setCell(9, 3, 90);
+data.setCell(9, 3, 85);
 window.suiteTableData['TKA_Application']= { tableData: data, tableDiv: 'times-div-TKA_Application'}
 return data;
 }
@@ -434,63 +407,59 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verify_Login</span>
-                <span class="method-start">11717 ms</span>
+                <span class="method-start">6223 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.DashboardTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_CourseList</span>
-                <span class="method-start">15979 ms</span>
+                <span class="method-start">7459 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_ClickUserBTN</span>
-                <span class="method-start">18483 ms</span>
+                <span class="method-start">10053 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_MainNavigation</span>
-                <span class="method-start">18965 ms</span>
+                <span class="method-start">10553 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.UserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_printTable</span>
-                <span class="method-start">19217 ms</span>
+                <span class="method-start">10797 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verify_gender</span>
-                <span class="method-start">22462 ms</span>
+                <span class="method-start">14226 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_verifyUnameAndGenderwithExcel</span>
-                <span class="method-start">22913 ms</span>
+                <span class="method-start">14691 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">verify_emailCode</span>
-                <span class="method-start">23747 ms</span>
+                <span class="method-start">15359 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_clickAddUser</span>
-                <span class="method-start">23859 ms</span>
+                <span class="method-start">15453 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.AddUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_AddUser</span>
-                <span class="method-start">24367 ms</span>
+                <span class="method-start">16265 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33994 ms</span>
+                <span class="method-start">27599 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

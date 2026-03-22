@@ -5,7 +5,6 @@
     <classes>
       <class name="com.pom.testcase.UserTest">
         <methods>
-          <include name="verify_emailCode"/>
           <include name="verify_gender"/>
         </methods>
       </class> <!-- com.pom.testcase.UserTest -->
