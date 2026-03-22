@@ -18,7 +18,6 @@ public class UserPage {
 	@FindBy(xpath = "//tr")
 	private List<WebElement> tRow;
 
-
 	@FindBy(xpath = "//td[6]")
 	private List<WebElement> genders;
 	
