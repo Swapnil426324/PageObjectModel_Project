@@ -43,4 +43,10 @@ public class LoginPage {
 		clickSignBTN();
 		return new DashboardPage(driver);
 	}
+	
+	public void loginWithDifferantData(String uname, String pass) {
+		typeUsername(uname);
+		typePassword(pass);
+		clickSignBTN();
+	}
 }
