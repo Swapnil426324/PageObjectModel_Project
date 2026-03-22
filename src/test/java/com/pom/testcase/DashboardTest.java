@@ -21,4 +21,9 @@ public class DashboardTest extends TestBase{
 		Assert.assertEquals(driver.getTitle(), "JavaByKiran | User");
 	}
 	
+	@Test(priority = 3)
+	public void verify_MainNavigation() {
+		Assert.assertTrue(LoginTest.dp.checkMainNavigation());
+	}
+	
 }

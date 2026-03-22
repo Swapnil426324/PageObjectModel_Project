@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -138,6 +138,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.LoginTest" class="method navigator-link" hash-for-method="verify_Login">verify_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-TKA_Application" title="com.pom.testcase.DashboardTest" class="method navigator-link" hash-for-method="verify_MainNavigation">verify_MainNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -217,6 +222,13 @@
                   <a name="verify_CourseList">
                   </a> <!-- verify_CourseList -->
                   <span class="method-name">verify_CourseList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_MainNavigation">
+                  </a> <!-- verify_MainNavigation -->
+                  <span class="method-name">verify_MainNavigation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -335,48 +347,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verify_AddUser')
 data.setCell(0, 2, 'com.pom.testcase.AddUserTest')
-data.setCell(0, 3, 10147);
+data.setCell(0, 3, 9237);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_printTable')
-data.setCell(1, 2, 'com.pom.testcase.UserTest')
-data.setCell(1, 3, 3687);
+data.setCell(1, 1, 'verify_Login')
+data.setCell(1, 2, 'com.pom.testcase.LoginTest')
+data.setCell(1, 3, 4248);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_Login')
-data.setCell(2, 2, 'com.pom.testcase.LoginTest')
-data.setCell(2, 3, 3602);
+data.setCell(2, 1, 'verify_printTable')
+data.setCell(2, 2, 'com.pom.testcase.UserTest')
+data.setCell(2, 3, 3236);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'verify_CourseList')
 data.setCell(3, 2, 'com.pom.testcase.DashboardTest')
-data.setCell(3, 3, 2609);
+data.setCell(3, 3, 2497);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verify_verifyUnameAndGenderwithExcel')
 data.setCell(4, 2, 'com.pom.testcase.UserTest')
-data.setCell(4, 3, 752);
+data.setCell(4, 3, 813);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verify_clickAddUser')
 data.setCell(5, 2, 'com.pom.testcase.UserTest')
-data.setCell(5, 3, 740);
+data.setCell(5, 3, 490);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verify_gender')
-data.setCell(6, 2, 'com.pom.testcase.UserTest')
-data.setCell(6, 3, 715);
+data.setCell(6, 1, 'verify_ClickUserBTN')
+data.setCell(6, 2, 'com.pom.testcase.DashboardTest')
+data.setCell(6, 3, 472);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verify_ClickUserBTN')
-data.setCell(7, 2, 'com.pom.testcase.DashboardTest')
-data.setCell(7, 3, 493);
+data.setCell(7, 1, 'verify_gender')
+data.setCell(7, 2, 'com.pom.testcase.UserTest')
+data.setCell(7, 3, 441);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verify_emailCode')
-data.setCell(8, 2, 'com.pom.testcase.UserTest')
-data.setCell(8, 3, 51);
+data.setCell(8, 1, 'verify_MainNavigation')
+data.setCell(8, 2, 'com.pom.testcase.DashboardTest')
+data.setCell(8, 3, 247);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verify_emailCode')
+data.setCell(9, 2, 'com.pom.testcase.UserTest')
+data.setCell(9, 3, 90);
 window.suiteTableData['TKA_Application']= { tableData: data, tableDiv: 'times-div-TKA_Application'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 22 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-TKA_Application">
               </div> <!-- times-div-TKA_Application -->
             </div> <!-- times-div -->
@@ -397,9 +413,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.pom.testcase.LoginTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">verify_printTable</span>
-                <br/>
                 <span class="ignored-method-name">verify_ClickUserBTN</span>
+                <br/>
+                <span class="ignored-method-name">verify_printTable</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -418,59 +434,63 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">verify_Login</span>
-                <span class="method-start">10309 ms</span>
+                <span class="method-start">11717 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.DashboardTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_CourseList</span>
-                <span class="method-start">13928 ms</span>
+                <span class="method-start">15979 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_ClickUserBTN</span>
-                <span class="method-start">16555 ms</span>
+                <span class="method-start">18483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_MainNavigation</span>
+                <span class="method-start">18965 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.UserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_printTable</span>
-                <span class="method-start">17055 ms</span>
+                <span class="method-start">19217 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_gender</span>
-                <span class="method-start">20759 ms</span>
+                <span class="method-start">22462 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_verifyUnameAndGenderwithExcel</span>
-                <span class="method-start">21480 ms</span>
+                <span class="method-start">22913 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verify_emailCode</span>
-                <span class="method-start">22237 ms</span>
+                <span class="method-start">23747 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verify_clickAddUser</span>
-                <span class="method-start">22301 ms</span>
+                <span class="method-start">23859 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.AddUserTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verify_AddUser</span>
-                <span class="method-start">23046 ms</span>
+                <span class="method-start">24367 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.pom.testcase.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">33514 ms</span>
+                <span class="method-start">33994 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
